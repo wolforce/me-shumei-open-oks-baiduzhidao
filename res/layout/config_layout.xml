@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择本任务的登录方式。一般选“电脑”可降低验证码出现的概率，但电脑版登录地址有可能会被部分手机当广告屏蔽掉。此时切换到“Android”或“WAP”即可。登录方式对签到结果无影响。"
+        android:textColor="#3f3f3f"
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/rgLoginType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/radio00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/checkbox_selector"
+            android:paddingLeft="25dp"
+            android:text="电脑"
+            android:textColor="#3f3f3f" />
+
+        <RadioButton
+            android:id="@+id/radio01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/checkbox_selector"
+            android:checked="true"
+            android:paddingLeft="25dp"
+            android:text="Android"
+            android:textColor="#3f3f3f" />
+
+        <RadioButton
+            android:id="@+id/radio02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/checkbox_selector"
+            android:paddingLeft="25dp"
+            android:text="WAP"
+            android:textColor="#3f3f3f" />
+    </RadioGroup>
+
+</LinearLayout>
